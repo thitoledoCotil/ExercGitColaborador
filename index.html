@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mentalista | A Verdade Está Nos Detalhes</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mentalistRed: '#7f1d1d',
+                        bloodRed: '#991b1b',
+                        goldAccent: '#d97706',
+                        darkBg: '#09090b',
+                        cardBg: '#121217',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Inter & Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #09090b;
+            color: #f4f4f5;
+        }
+        .cinzel-font {
+            font-family: 'Cinzel', serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #09090b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #7f1d1d;
+            border-radius: 4px;
+        }
+        .blood-glow {
+            text-shadow: 0 0 15px rgba(153, 27, 27, 0.7);
+        }
+        .gold-glow {
+            text-shadow: 0 0 12px rgba(217, 119, 6, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-zinc-100 min-h-screen flex flex-col selection:bg-bloodRed selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl sm:text-3xl cinzel-font font-bold text-goldAccent tracking-wider">O MENTALISTA</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-zinc-300">
+                <a href="#enredo" class="hover:text-goldAccent transition-colors">O Enredo & CBI</a>
+                <a href="#personagens" class="hover:text-goldAccent transition-colors">Equipe</a>
+                <a href="#redjohn" class="hover:text-bloodRed transition-colors">Red John</a>
+                <a href="#mentalismo" class="hover:text-goldAccent transition-colors">Salão de Mentalismo</a>
+            </nav>
+            <a href="#mentalismo" class="bg-mentalistRed hover:bg-bloodRed text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all shadow-lg shadow-red-950/50">
+                Teste o Mentalista
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-zinc-950 via-zinc-900 to-darkBg border-b border-zinc-800/60">
+            <!-- Background decorative light/shadows -->
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-900/30 via-transparent to-transparent pointer-events-none"></div>
+            
+            <div class="max-w-4xl mx-auto text-center relative z-10 space-y-8 py-16">
+                <span class="inline-block uppercase tracking-[0.3em] text-xs sm:text-sm text-goldAccent font-semibold bg-goldAccent/10 px-4 py-1.5 rounded-full border border-goldAccent/20">
+                    A mente humana é um livro aberto
+                </span>
+                
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl cinzel-font font-bold tracking-tight text-white leading-tight">
+                    "O segredo está nos <span class="text-bloodRed blood-glow">detalhes</span>."
+                </h1>
+                
+                <p class="text-lg sm:text-xl text-zinc-400 max-w-2xl mx-auto font-light leading-relaxed">
+                    Acompanhe Patrick Jane, o ex-vigarista que usa suas habilidades de suposta clarividência — na verdade, aguda observação e psicologia — para resolver os casos mais complexos do CBI enquanto caça o assassino de sua família: Red John.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                    <a href="#enredo" class="bg-goldAccent hover:bg-amber-600 text-zinc-950 font-bold px-8 py-3 rounded-lg transition-all shadow-lg shadow-amber-900/20">
+                        Explorar a Série
+                    </a>
+                    <a href="#redjohn" class="border border-zinc-700 hover:border-bloodRed text-zinc-300 hover:text-white px-8 py-3 rounded-lg transition-all">
+                        O Mistério Red John
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="enredo" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center space-x-2 text-goldAccent text-sm font-semibold tracking-wider uppercase">
+                        <span>Bureau Kaliforniano de Investigação</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl cinzel-font font-bold text-white">
+                        O CBI e a Caçada Implacável
+                    </h2>
+                    <p class="text-zinc-400 leading-relaxed">
+                        Patrick Jane atua como consultor sênior do CBI (California Bureau of Investigation). Utilizando técnicas de leitura fria, linguagem corporal e manipulação psicológica, ele consegue o que detetives tradicionais levam meses para descobrir em minutos.
+                    </p>
+                    <p class="text-zinc-400 leading-relaxed">
+                        No entanto, por trás de cada caso solucionado, existe uma obsessão sombria: capturar <strong class="text-bloodRed">Red John</strong>, o serial killer enigmático que brutalmente assassinou a esposa e a filha de Jane anos antes. Cada pista deixada por Red John é um desafio pessoal ao intelecto de Jane.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="bg-cardBg p-4 rounded-xl border border-zinc-800">
+                            <h3 class="text-goldAccent font-bold text-xl mb-1">151 Episódios</h3>
+                            <p class="text-zinc-400 text-sm">7 temporadas de puro suspense e deduções brilhantes.</p>
+                        </div>
+                        <div class="bg-cardBg p-4 rounded-xl border border-zinc-800">
+                            <h3 class="text-bloodRed font-bold text-xl mb-1">A Marca</h3>
+                            <p class="text-zinc-400 text-sm">O sorriso feito com o sangue das vítimas na parede.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive / Visual CBI aesthetic card -->
+                <div class="relative bg-gradient-to-br from-zinc-900 to-cardBg p-8 rounded-2xl border border-zinc-800 shadow-2xl">
+                    <div class="absolute top-0 right-0 bg-mentalistRed/20 text-bloodRed text-xs uppercase tracking-widest px-3 py-1 rounded-bl-xl rounded-tr-2xl font-bold">
+                        Caso Ativo
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 cinzel-font">Perfil Psicológico de Patrick Jane</h3>
+                    <ul class="space-y-3 text-sm text-zinc-300">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-goldAccent font-bold">•</span>
+                            <span><strong>Ex-vigarista:</strong> Conhece perfeitamente os mecanismos da mente humana e da enganação.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-goldAccent font-bold">•</span>
+                            <span><strong>Zero credulidade:</strong> Afirma repetidamente que médiuns e clarividentes não existem; é tudo observação.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-goldAccent font-bold">•</span>
+                            <span><strong>Estilo único:</strong> Viste terno impecável, toma chá constantemente e ignora regras burocráticas da polícia.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="redjohn" class="py-20 bg-zinc-900/50 border-y border-zinc-800 relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+                <span class="text-bloodRed text-xs tracking-[0.3em] font-bold uppercase">Easter Egg interativo</span>
+                <h2 class="text-3xl sm:text-4xl cinzel-font font-bold text-white">A Assinatura de Red John</h2>
+                <p class="text-zinc-400 max-w-xl mx-auto text-sm sm:text-base">
+                    Red John sempre deixa sua marca registrada na parede das cenas de crime. Clique na parede abaixo para interagir com o símbolo.
+                </p>
+
+                <!-- Interactive Wall Element -->
+                <div id="wallContainer" class="relative w-full max-w-2xl h-64 sm:h-80 mx-auto bg-zinc-950 rounded-2xl border-2 border-zinc-800 overflow-hidden cursor-pointer shadow-2xl flex items-center justify-center transition-all hover:border-bloodRed/50 group">
+                    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#3f3f46_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                    
+                    <div class="absolute inset-0 flex items-center justify-center p-6 text-center">
+                        <p id="wallInstruction" class="text-zinc-500 text-sm group-hover:text-zinc-400 transition-colors">
+                            [ Clique na parede escura para revelar a presença de Red John ]
+                        </p>
+                    </div>
+
+                    <!-- Red John Smiley (Hidden by default) -->
+                    <div id="smileyFace" class="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-700 pointer-events-none">
+                        <div class="relative w-36 h-36 sm:w-48 sm:h-48 border-4 border-bloodRed rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(153,27,27,0.8)]">
+                            <!-- Eyes -->
+                            <div class="absolute top-10 left-12 w-4 h-4 bg-bloodRed rounded-full"></div>
+                            <div class="absolute top-10 right-12 w-4 h-4 bg-bloodRed rounded-full"></div>
+                            <!-- Smile -->
+                            <div class="absolute bottom-8 w-24 h-12 border-b-4 border-bloodRed rounded-b-full"></div>
+                        </div>
+                        <p class="mt-4 text-bloodRed font-mono text-xs tracking-widest uppercase blood-glow">
+                            "Tiger, tiger, burning bright..."
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <button onclick="resetWall()" class="text-xs text-zinc-500 hover:text-zinc-300 underline transition-colors">
+                        Limpar Parede
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="personagens" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-goldAccent text-xs tracking-widest font-semibold uppercase">Equipe de Investigação</span>
+                <h2 class="text-3xl sm:text-4xl cinzel-font font-bold text-white">Personagens Principais</h2>
+                <p class="text-zinc-400 max-w-xl mx-auto">
+                    A dinâmica entre o intelecto caótico de Patrick Jane e o rigor profissional da equipe do CBI.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1: Patrick Jane -->
+                <div class="bg-cardBg rounded-xl p-6 border border-zinc-800 hover:border-goldAccent/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-goldAccent/10 text-goldAccent flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition-transform">
+                            PJ
+                        </div>
+                        <h3 class="text-xl font-bold text-white cinzel-font">Patrick Jane</h3>
+                        <p class="text-xs text-goldAccent font-semibold uppercase tracking-wider mb-3">Consultor do CBI / Ex-Mentalista</p>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Brilhante, encantador e pouco convencional. Usa suas habilidades de observação para desvendar crimes e buscar vingança contra Red John.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-800/80 text-xs text-zinc-500 font-mono">
+                        Especialidade: Leitura fria e manipulação
+                    </div>
+                </div>
+
+                <!-- Card 2: Teresa Lisbon -->
+                <div class="bg-cardBg rounded-xl p-6 border border-zinc-800 hover:border-goldAccent/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-blue-950/40 text-blue-400 flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition-transform">
+                            TL
+                        </div>
+                        <h3 class="text-xl font-bold text-white cinzel-font">Teresa Lisbon</h3>
+                        <p class="text-xs text-blue-400 font-semibold uppercase tracking-wider mb-3">Agente Sênior / Chefe de Equipe</p>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Séria, íntegra e compassiva. É a âncora moral da equipe e a única capaz de manter Patrick Jane sob controle (ou pelo menos tentar).
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-800/80 text-xs text-zinc-500 font-mono">
+                        Especialidade: Liderança e ética policial
+                    </div>
+                </div>
+
+                <!-- Card 3: Kimball Cho -->
+                <div class="bg-cardBg rounded-xl p-6 border border-zinc-800 hover:border-goldAccent/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-zinc-800 text-zinc-200 flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition-transform">
+                            KC
+                        </div>
+                        <h3 class="text-xl font-bold text-white cinzel-font">Kimball Cho</h3>
+                        <p class="text-xs text-zinc-400 font-semibold uppercase tracking-wider mb-3">Agente do CBI</p>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Ex-militar de expressão séria e inabalável. Conhecido por seu humor seco, inteligência tática e lealdade inquestionável.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-800/80 text-xs text-zinc-500 font-mono">
+                        Especialidade: Interrogatório direto
+                    </div>
+                </div>
+
+                <!-- Card 4: Wayne Rigsby -->
+                <div class="bg-cardBg rounded-xl p-6 border border-zinc-800 hover:border-goldAccent/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-zinc-800 text-zinc-200 flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition-transform">
+                            WR
+                        </div>
+                        <h3 class="text-xl font-bold text-white cinzel-font">Wayne Rigsby</h3>
+                        <p class="text-xs text-zinc-400 font-semibold uppercase tracking-wider mb-3">Investigador de Campo</p>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Especialista em incêndios e forense básica. Possui um bom coração, adora comer e viveu um romance marcante com Grace Van Pelt.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-800/80 text-xs text-zinc-500 font-mono">
+                        Especialidade: Força tática e investigações
+                    </div>
+                </div>
+
+                <!-- Card 5: Grace Van Pelt -->
+                <div class="bg-cardBg rounded-xl p-6 border border-zinc-800 hover:border-goldAccent/50 transition-all flex flex-col justify-between group md:col-span-2 lg:col-span-1">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-zinc-800 text-zinc-200 flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition-transform">
+                            VP
+                        </div>
+                        <h3 class="text-xl font-bold text-white cinzel-font">Grace Van Pelt</h3>
+                        <p class="text-xs text-zinc-400 font-semibold uppercase tracking-wider mb-3">Especialista em Tecnologia</p>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Inteligente, tecnologicamente ágil e inicialmente mais idealista em relação à religião e crenças espirituais, o que frequentemente gerava debates com Jane.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-800/80 text-xs text-zinc-500 font-mono">
+                        Especialidade: Pesquisa e cibercrime
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mentalismo" class="py-20 bg-zinc-900/60 border-t border-zinc-800 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto bg-cardBg rounded-2xl border border-zinc-800 p-8 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-goldAccent/5 rounded-full blur-2xl pointer-events-none"></div>
+
+                <div class="text-center space-y-3 mb-8">
+                    <span class="text-goldAccent text-xs tracking-widest font-semibold uppercase">Salão de Experimentos</span>
+                    <h2 class="text-2xl sm:text-3xl cinzel-font font-bold text-white">Salão de Dedução de Patrick Jane</h2>
+                    <p class="text-zinc-400 text-sm">
+                        Escolha uma carta ou pense em um número. Deixe que o Mentalista leia sua mente através de indução psicológica.
+                    </p>
+                </div>
+
+                <!-- Game Step 1: Mode Selection -->
+                <div id="gameMenu" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <button onclick="startCardTrick()" class="p-6 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-goldAccent rounded-xl text-left transition-all group">
+                            <span class="text-goldAccent font-bold text-lg block mb-1 group-hover:translate-x-1 transition-transform">Truque das Cartas →</span>
+                            <span class="text-zinc-400 text-xs">Escolha uma carta mentalmente e veja Patrick adivinhar.</span>
+                        </button>
+                        <button onclick="startNumberTrick()" class="p-6 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-goldAccent rounded-xl text-left transition-all group">
+                            <span class="text-goldAccent font-bold text-lg block mb-1 group-hover:translate-x-1 transition-transform">Adivinhação Numérica →</span>
+                            <span class="text-zinc-400 text-xs">Siga passos matemáticos simples e revele seu número final.</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Game Area: Card Trick -->
+                <div id="cardTrickArea" class="hidden space-y-6">
+                    <div class="text-center space-y-2">
+                        <h3 class="text-lg font-bold text-white">Escolha uma das 4 cartas abaixo mentalmente:</h3>
+                        <p class="text-xs text-zinc-400">Não clique nela. Apenas memorize-a bem.</p>
+                    </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-4">
+                        <div class="bg-zinc-900 border border-zinc-700 p-6 rounded-xl text-center text-2xl font-serif text-bloodRed font-bold shadow-inner">
+                            A♥ <span class="block text-xs text-zinc-400 mt-2">Ás de Copas</span>
+                        </div>
+                        <div class="bg-zinc-900 border border-zinc-700 p-6 rounded-xl text-center text-2xl font-serif text-zinc-100 font-bold shadow-inner">
+                            10♠ <span class="block text-xs text-zinc-400 mt-2">10 de Espadas</span>
+                        </div>
+                        <div class="bg-zinc-900 border border-zinc-700 p-6 rounded-xl text-center text-2xl font-serif text-bloodRed font-bold shadow-inner">
+                            Q♦ <span class="block text-xs text-zinc-400 mt-2">Dama de Ouros</span>
+                        </div>
+                        <div class="bg-zinc-900 border border-zinc-700 p-6 rounded-xl text-center text-2xl font-serif text-zinc-100 font-bold shadow-inner">
+                            7♣ <span class="block text-xs text-zinc-400 mt-2">7 de Paus</span>
+                        </div>
+                    </div>
+
+                    <div class="text-center pt-4">
+                        <button onclick="revealCardGuess()" class="bg-goldAccent hover:bg-amber-600 text-zinc-950 font-bold px-6 py-2.5 rounded-lg transition-all text-sm">
+                            Já escolhi. Leia minha mente!
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Game Area: Number Trick -->
+                <div id="numberTrickArea" class="hidden space-y-6">
+                    <div class="bg-zinc-900 p-6 rounded-xl border border-zinc-800 space-y-4 text-sm text-zinc-300">
+                        <p class="font-bold text-goldAccent">Siga as instruções em silêncio:</p>
+                        <ol class="list-decimal list-inside space-y-2">
+                            <li>Pense em um número de 1 a 10.</li>
+                            <li>Multiplique esse número por 2.</li>
+                            <li>Some 10 ao resultado.</li>
+                            <li>Divida o total por 2.</li>
+                            <li>Subtraia o número original em que você pensou no primeiro passo.</li>
+                        </ol>
+                    </div>
+                    <div class="text-center pt-2">
+                        <button onclick="revealNumberGuess()" class="bg-goldAccent hover:bg-amber-600 text-zinc-950 font-bold px-6 py-2.5 rounded-lg transition-all text-sm">
+                            Qual é o meu resultado?
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Result Box -->
+                <div id="mentalistResult" class="hidden mt-8 p-6 bg-zinc-950 border border-goldAccent/40 rounded-xl text-center space-y-3">
+                    <span class="text-xs uppercase tracking-widest text-goldAccent font-bold">Dedução Concluída</span>
+                    <p id="resultText" class="text-lg text-white font-medium italic"></p>
+                    <button onclick="resetGame()" class="text-xs text-zinc-400 hover:text-white underline pt-2 block mx-auto">
+                        Tentar novamente
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-zinc-950 border-t border-zinc-800/80 py-12 text-center text-zinc-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <p class="cinzel-font text-goldAccent font-bold text-lg">O Mentalista</p>
+            <p class="text-xs">Criado por Bruno Heller. Homenagem à série de TV da CBS (2008–2015).</p>
+            <p class="text-xs text-zinc-600">"A ignorância é uma bênção... até você precisar de respostas."</p>
+        </div>
+    </footer>
+
+    <script>
+        // Interactive Red John Wall
+        const wallContainer = document.getElementById('wallContainer');
+        const smileyFace = document.getElementById('smileyFace');
+        const wallInstruction = document.getElementById('wallInstruction');
+
+        wallContainer.addEventListener('click', () => {
+            smileyFace.classList.remove('opacity-0', 'pointer-events-none');
+            smileyFace.classList.add('opacity-100');
+            wallInstruction.style.display = 'none';
+        });
+
+        function resetWall() {
+            smileyFace.classList.remove('opacity-100');
+            smileyFace.classList.add('opacity-0', 'pointer-events-none');
+            wallInstruction.style.display = 'block';
+        }
+
+        // Mini-Game Logic
+        function startCardTrick() {
+            document.getElementById('gameMenu').classList.add('hidden');
+            document.getElementById('cardTrickArea').classList.remove('hidden');
+            document.getElementById('mentalistResult').classList.add('hidden');
+        }
+
+        function startNumberTrick() {
+            document.getElementById('gameMenu').classList.add('hidden');
+            document.getElementById('numberTrickArea').classList.remove('hidden');
+            document.getElementById('mentalistResult').classList.add('hidden');
+        }
+
+        function revealCardGuess() {
+            document.getElementById('cardTrickArea').classList.add('hidden');
+            const resultBox = document.getElementById('mentalistResult');
+            const resultText = document.getElementById('resultText');
+            resultBox.classList.remove('hidden');
+            resultText.innerHTML = '"Eu notei sua pupila dilatando levemente ao olhar para a carta... Você escolheu a <span class="text-bloodRed font-bold">Dama de Ouros (Q♦)</span>, não foi? Preste mais atenção na sua linguagem corporal da próxima vez."';
+        }
+
+        function revealNumberGuess() {
+            document.getElementById('numberTrickArea').classList.add('hidden');
+            const resultBox = document.getElementById('mentalistResult');
+            const resultText = document.getElementById('resultText');
+            resultBox.classList.remove('hidden');
+            resultText.innerHTML = '"Isso é elementar para quem observa padrões. O resultado na sua mente é exatamente <span class="text-goldAccent font-bold">5</span>. A matemática nunca mente, as pessoas sim."';
+        }
+
+        function resetGame() {
+            document.getElementById('mentalistResult').classList.add('hidden');
+            document.getElementById('cardTrickArea').classList.add('hidden');
+            document.getElementById('numberTrickArea').classList.add('hidden');
+            document.getElementById('gameMenu').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
